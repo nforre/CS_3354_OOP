@@ -1,3 +1,4 @@
+//Journey Forrest, CS 3354, Fall 2026 
 import java.util.Scanner;
 
 public class TemperatureProgram {
