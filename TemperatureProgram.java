@@ -1,10 +1,20 @@
 import java.util.Scanner;
 
-public static void main(String[] args) {
+public class TemperatureProgram {
+    public static void main(String[] args) {
 
-    System.out.print("Enter temperature in Fahrenheit: ");
-    Scanner input = new Scanner(System.in);
-    int temp = input.nextInt();
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter temperature in Fahrenheit: ");
 
+        int temp = input.nextInt();
 
+        if (temp <= 32) 
+            System.out.println("Freezing");
+        else if (temp <= 50)
+            System.out.println("Cold");
+        else if (temp <= 85)
+            System.out.println("Warm");
+        else
+            System.out.println("Hot");
+    }
 }
