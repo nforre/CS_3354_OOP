@@ -12,5 +12,6 @@ public class TicketProgram {
         totalCost = numOfTickets * ticketPrice;
         System.out.println("Total cost of tickets: $" + totalCost);
 
+        input.close(); // Followed from Dr.Hernandez' Solutions (prevents memory leak)
     }
 }
