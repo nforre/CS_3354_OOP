@@ -8,12 +8,12 @@ public class TriangleProblem {
 		Scanner keyboard = new Scanner(System.in);
 		int size;
 
-		// read size
-		System.out.println("Enter the size of the triangle [3-5]: ");
+		System.out.println("Enter the size of the triangle [3-5]: "); // read size
 		size = keyboard.nextInt();
+
 		// draw top triangles
 		for (int row = 0; row < size; row++) {
-			//// draw white spaces
+			//// white spaces
 			for (int column = 0; column < size - row - 1; column++) {
 				System.out.print(" ");
 			}
@@ -32,13 +32,15 @@ public class TriangleProblem {
 			// move to next line
 			System.out.println();
 		}
-		// draw horizontal gap
+
+		// horizontal gap
 		for (int column = 0; column < GAP_SIZE / 2; column++) {
 			System.out.println();
 		}
-		// draw bottom triangles
+		
+		//  bottom triangles
 		for (int row = 0; row < size; row++) {
-			//// draw white spaces
+			////  white spaces
 			for (int column = 0; column < row; column++) {
 				System.out.print(" ");
 			}
