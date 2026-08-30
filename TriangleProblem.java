@@ -40,5 +40,6 @@ public class TriangleProblem {
 				System.out.print("*");
 			System.out.println();
 		}
+		input.close();
     }
 }
