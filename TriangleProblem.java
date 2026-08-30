@@ -25,7 +25,7 @@ public class TriangleProblem {
 		}
 		
 		for (int col = 0; col < GAP_SIZE + 1; col++)
-			System.out.print("");
+			System.out.println();
 
 		for (int row = 0; row < size; row++){
 			for (int col = 0; col < row; col++)
