@@ -11,7 +11,7 @@ public class TriangleProgram {
 		System.out.print("Enter the size of the triangle [3-5]: "); // read size
 		size = input.nextInt();
 
-		for (int row = 0; row < size; row++){
+		for (int row = 0; row < size; row++){ // top triangles
 			for (int col = 0; col < size - row - 1; col++)
 				System.out.print(" "); // white space
 			for (int col = 0; col < row + 1; col++)
@@ -25,9 +25,9 @@ public class TriangleProgram {
 		}
 		
 		for (int col = 0; col < GAP_SIZE / 2; col++)
-			System.out.println();
+			System.out.println(); // horizontal gap
 
-		for (int row = 0; row < size; row++){
+		for (int row = 0; row < size; row++){ // bottom triangles
 			for (int col = 0; col < row; col++)
 				System.out.print(" "); // white space
 			for (int col = size; col > row; col--)
