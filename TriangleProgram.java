@@ -2,7 +2,7 @@
 
 import java.util.Scanner;
 
-public class TriangleProblem {
+public class TriangleProgram {
     public static void main(String[] args) {
         final int GAP_SIZE = 2;
 		Scanner input = new Scanner(System.in);
