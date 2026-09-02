@@ -1,12 +1,10 @@
 import java.util.Scanner;
 /**
- * 
- * 
- * 
+ * AreaProgram is a area calculator application for 2D Squares, Circles, and Triangles
  */
 public class AreaProgram {
     /**
-	 * 
+	 * Executes all of AreaProgram
 	 * 
 	 * @param args
 	 */
