@@ -1,7 +1,15 @@
 import java.util.Scanner;
-
-
+/**
+ * 
+ * 
+ * 
+ */
 public class AreaProgram {
+    /**
+	 * 
+	 * 
+	 * @param args
+	 */
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         int option;
@@ -15,7 +23,7 @@ public class AreaProgram {
 		    System.out.println("4. Exit");
             System.out.print("Please select an option: ");
             option = input.nextInt();
-
+            
             switch(option) {
                 case 1:
                     System.out.println("\n\n=== AREA OF A SQUARE ===\n");
