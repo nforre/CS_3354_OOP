@@ -15,7 +15,7 @@ public class AreaProgram {
             option = input.nextInt();
 
             if (option == 1) {
-                System.out.println("\n\n=== AREA OF A SQUARE ===");
+                System.out.println("\n\n=== AREA OF A SQUARE ===\n");
                 System.out.print("Please enter a side length: ");
                 int side = input.nextInt();
                 area = side * side;
