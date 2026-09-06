@@ -13,7 +13,7 @@ public class ImprovedAreaProgram {
      * 
      * @param input
      */
-    static void calcSquare (Scanner input){
+    public static void calcSquare (Scanner input){
         System.out.println("\n\n=== AREA OF A SQUARE ===\n");
         System.out.print("Please enter a side length: ");
         int side = input.nextInt();
@@ -28,7 +28,7 @@ public class ImprovedAreaProgram {
      * 
      * @param input
      */
-    static void calcCircle (Scanner input){
+    public static void calcCircle (Scanner input){
         System.out.println("\n\n=== AREA OF A CIRCLE ===\n");
         System.out.print("Please enter a radius: ");
         int radius = input.nextInt();
@@ -43,7 +43,7 @@ public class ImprovedAreaProgram {
      * 
      * @param input
      */
-    static void calcTriangle (Scanner input){
+    public static void calcTriangle (Scanner input){
         System.out.println("\n\n=== AREA OF A TRIANGLE ===\n");
         System.out.print("Please enter a base: ");
         int base = input.nextInt();
