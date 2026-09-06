@@ -3,10 +3,16 @@ import java.util.Scanner;
 /**
  * ImprovedAreaProgram is the improved version 
  * of an area calculator application for 
- * 2D Squares, Circles, and Triangles
+ * 2D Squares, Circles, and Triangles.
  */
 public class ImprovedAreaProgram {
-    
+    /**
+     * calcSquare is a void function that 
+     * calculates the square area given a side
+     * from the user.
+     * 
+     * @param input
+     */
     static void calcSquare (Scanner input){
         System.out.println("\n\n=== AREA OF A SQUARE ===\n");
         System.out.print("Please enter a side length: ");
@@ -15,6 +21,13 @@ public class ImprovedAreaProgram {
         System.out.println("The area of this square is " + area);
     }
 
+    /**
+     * calcCircle is a void function that 
+     * calculates the circle area given a radius
+     * from the user.
+     * 
+     * @param input
+     */
     static void calcCircle (Scanner input){
         System.out.println("\n\n=== AREA OF A CIRCLE ===\n");
         System.out.print("Please enter a radius: ");
@@ -23,6 +36,13 @@ public class ImprovedAreaProgram {
         System.out.println("The area of this circle is " + area);
     }
 
+    /**
+     * calcTriangle is a void function that 
+     * calculates the triangle area given a base
+     * and height from the user.
+     * 
+     * @param input
+     */
     static void calcTriangle (Scanner input){
         System.out.println("\n\n=== AREA OF A TRIANGLE ===\n");
         System.out.print("Please enter a base: ");
@@ -34,14 +54,15 @@ public class ImprovedAreaProgram {
     }
 
     /**
-	 * Executes all of ImprovedAreaProgram
+	 * Main function executes the menu feature and 
+     * do-while loop for ImprovedAreaProgram.
 	 * 
 	 * @param args
 	 */
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         int option;
-        
+
         do {
             System.out.println("\n=== AREA CALCULATOR ===\n");
             System.out.println("1. Area of a Square");
