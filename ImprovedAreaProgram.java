@@ -14,6 +14,25 @@ public class ImprovedAreaProgram {
         double area = side * side;
         System.out.println("The area of this square is " + area);
     }
+
+    static void calcCircle (Scanner input){
+        System.out.println("\n\n=== AREA OF A CIRCLE ===\n");
+        System.out.print("Please enter a radius: ");
+        int radius = input.nextInt();
+        double area = Math.PI * Math.pow(radius, 2);
+        System.out.println("The area of this circle is " + area);
+    }
+
+    static void calcTriangle (Scanner input){
+        System.out.println("\n\n=== AREA OF A TRIANGLE ===\n");
+        System.out.print("Please enter a base: ");
+        int base = input.nextInt();
+        System.out.print("Please enter a width height: ");
+        int height = input.nextInt();
+        double area = base * height * .5;
+        System.out.println("The area of this triangle is " + area);
+    }
+
     /**
 	 * Executes all of ImprovedAreaProgram
 	 * 
@@ -22,8 +41,7 @@ public class ImprovedAreaProgram {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         int option;
-        double area;
-
+        
         do {
             System.out.println("\n=== AREA CALCULATOR ===\n");
             System.out.println("1. Area of a Square");
@@ -40,20 +58,10 @@ public class ImprovedAreaProgram {
                         calcSquare(input);
                         break; 
                     case 2:
-                        System.out.println("\n\n=== AREA OF A CIRCLE ===\n");
-                        System.out.print("Please enter a radius: ");
-                        int radius = input.nextInt();
-                        area = Math.PI * Math.pow(radius, 2);
-                        System.out.println("The area of this circle is " + area);
+                        calcCircle(input);
                         break; 
                     case 3:
-                        System.out.println("\n\n=== AREA OF A TRIANGLE ===\n");
-                        System.out.print("Please enter a base: ");
-                        int base = input.nextInt();
-                        System.out.print("Please enter a width height: ");
-                        int height = input.nextInt();
-                        area = base * height * .5;
-                        System.out.println("The area of this triangle is " + area);
+                        calcTriangle(input);
                         break; 
                 }
         } while (option != 4);
