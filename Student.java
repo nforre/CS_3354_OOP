@@ -10,24 +10,24 @@ public class Student {
         this.firstName = firstName;
     }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
+    public String getFirstName() {
+        return firstName;
     }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
+    public String getLastName() {
+        return lastName;
     }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
+    public void setMajor(String major) {
+        this.major = major;
     }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
+    public String getMajor() {
+        return major;
     }
 
     public void setGpa(double gpa) {
@@ -36,5 +36,9 @@ public class Student {
 
     public double getGpa() {
         return gpa;
+    }
+
+    public Student() {
+        this("", "", "", 0.0);
     }
 }
