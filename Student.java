@@ -9,7 +9,7 @@ public class Student {
 
     /** 
      * Sets the first name value of student class object
-     * @param firstName
+     * @param firstName First name of this student
      */
     public void setFirstName(String firstName) {
         this.firstName = firstName;
@@ -17,7 +17,7 @@ public class Student {
 
     /** 
      * Returns the first name string of student class object
-     * @return String
+     * @return String 
      */
     public String getFirstName() {
         return firstName;
@@ -25,7 +25,7 @@ public class Student {
 
     /** 
      * Sets the last name value of student class object
-     * @param lastName
+     * @param lastName Last name of this student
      */
     public void setLastName(String lastName) {
         this.lastName = lastName;
@@ -41,7 +41,7 @@ public class Student {
 
     /** 
      * Sets the major value of student class object
-     * @param major
+     * @param major The major of this student
      */
     public void setMajor(String major) {
         this.major = major;
@@ -57,7 +57,7 @@ public class Student {
 
     /** 
      * Sets the GPA value of student class object
-     * @param gpa
+     * @param gpa The GPA of this student
      */
     public void setGpa(double gpa) {
         this.gpa = gpa;
@@ -82,6 +82,11 @@ public class Student {
         this.gpa = gpa;
     }
 
+    /** 
+     * Main function that creates students and 
+     * prints out student data from student class
+     * @param args
+     */
     public static void main(String[] args) {
         Student student1 = new Student();
         System.out.println("\nFirst name: " + student1.getFirstName());
