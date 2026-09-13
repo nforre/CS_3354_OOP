@@ -41,4 +41,32 @@ public class Student {
     public Student() {
         this("", "", "", 0.0);
     }
+
+    public Student(String firstName, String lastName, String major, double gpa) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.major = major;
+        this.gpa = gpa;
+    }
+
+    public static void main(String[] args) {
+        Student student1 = new Student();
+        System.out.println("First name: " + student1.getFirstName());
+        System.out.println("Last name: " + student1.getLastName());
+        System.out.println("Major: " + student1.getMajor());
+        System.out.println("GPA: " + student1.getGpa());
+        Student student2 = new Student("Peter","Parker", "CS", 3.5);
+        System.out.println("First name: " + student2.getFirstName());
+        System.out.println("Last name: " + student2.getLastName());
+        System.out.println("Major: " + student2.getMajor());
+        System.out.println("GPA: " + student2.getGpa());
+        // Creating 3rd student
+        Student student3 = new Student("Journey", "Forrest", "Art History", 3.6);
+        student3.setMajor("Applied Math");
+        System.out.println("First name: " + student3.getFirstName());
+        System.out.println("Last name: " + student3.getLastName());
+        System.out.println("Major: " + student3.getMajor());
+        System.out.println("GPA: " + student3.getGpa());
+
+    }
 }
