@@ -1,5 +1,8 @@
 // Journey Forrest, CS 3354, Fall 2026 
 
+/**
+ * A class of an individual student's first name, last name, major, and GPA
+ */
 public class Student {
     private String firstName;
     private String lastName;
@@ -71,10 +74,20 @@ public class Student {
         return gpa;
     }
 
+    /**
+     * Constructs Student object with default values
+     */
     public Student() {
         this("", "", "", 0.0);
     }
 
+    /**
+     * Constructs Student object with provided values
+     * @param firstName first name of student (String)
+     * @param lastName last name of student (String)
+     * @param major major of student (String)
+     * @param gpa GPA of student (double)
+     */
     public Student(String firstName, String lastName, String major, double gpa) {
         this.firstName = firstName;
         this.lastName = lastName;
@@ -83,7 +96,7 @@ public class Student {
     }
 
     /** 
-     * Main function that creates students and 
+     * Main function that creates student objects and 
      * prints out student data from student class
      * @param args
      */
