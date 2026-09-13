@@ -4,10 +4,10 @@
  * A class of an individual student's first name, last name, major, and GPA
  */
 public class Student {
-    private String firstName;
-    private String lastName;
-    private String major;
-    private double gpa;
+    private String firstName; // Student's first name
+    private String lastName;  // Student's last name
+    private String major;     // Student's major
+    private double gpa;       // Student's GPA
 
 
     /** 
@@ -98,22 +98,25 @@ public class Student {
     /** 
      * Main function that creates student objects and 
      * prints out student data from student class
-     * @param args
+     * @param args arguments
      */
     public static void main(String[] args) {
+        // Creating 1st student (default constructor)
         Student student1 = new Student();
         System.out.println("\nFirst name: " + student1.getFirstName());
         System.out.println("Last name: " + student1.getLastName());
         System.out.println("Major: " + student1.getMajor());
         System.out.println("GPA: " + student1.getGpa());
+        // Creating 2nd student (parameterized constructor)
         Student student2 = new Student("Peter","Parker", "CS", 3.5);
         System.out.println("\nFirst name: " + student2.getFirstName());
         System.out.println("Last name: " + student2.getLastName());
         System.out.println("Major: " + student2.getMajor());
         System.out.println("GPA: " + student2.getGpa());
-        // Creating 3rd student
-        Student student3 = new Student("Journey", "Forrest", "Art History", 3.6);
+        // Creating 3rd student (parameterized with sample values)
+        Student student3 = new Student("Journey", "Forrest", "Art History", 2.7);
         student3.setMajor("Applied Math");
+        student3.setGpa(3.6);
         System.out.println("\nFirst name: " + student3.getFirstName());
         System.out.println("Last name: " + student3.getLastName());
         System.out.println("Major: " + student3.getMajor());
