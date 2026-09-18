@@ -3,18 +3,30 @@
 public class CylinderType extends CircleType {
     private double height;
 
+    /** 
+     * @param height
+     */
     public void setHeight(double height) {
         this.height = height;
     }
 
+    /** 
+     * @return double
+     */
     public double getHeight() {
         return height;
     }
 
+    /** 
+     * @return double
+     */
     public double getVolume() {
         return super.getArea() * height;
     }
 
+    /** 
+     * @return double
+     */
     // super.getArea (CircleType)
     // this.getArea || getArea (CylinderType)
 
@@ -32,6 +44,9 @@ public class CylinderType extends CircleType {
         this.height = height;
     }
 
+    /** 
+     * @param args
+     */
     public static void main(String[] args) {
         CylinderType cylinder = new CylinderType(10,5);
         System.out.println("Volume: " + cylinder.getVolume());

@@ -2,10 +2,16 @@
 
 public class SphereType extends CircleType {
 
+    /** 
+     * @return double
+     */
     public double getVolume() {
         return 4 / 3.0 * Math.PI * Math.pow(radius, 3);
     }
 
+    /** 
+     * @return double
+     */
     @Override
     public double getArea() {
         return 4 * Math.PI * Math.pow(radius, 2);
@@ -19,6 +25,9 @@ public class SphereType extends CircleType {
         super(radius); // CircleType(double)
     }
 
+    /** 
+     * @param args
+     */
     public static void main(String[] args) {
         SphereType sphere = new SphereType(10);
         System.out.println("Sphere's volume: " + sphere.getVolume());
@@ -32,6 +41,9 @@ public class SphereType extends CircleType {
 
     }
 
+    /** 
+     * @param circle
+     */
     public static void displayArea(CircleType circle) {
         System.out.println("Printing area within a method.");
         // circle.getVolume();
