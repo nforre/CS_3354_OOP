@@ -20,7 +20,7 @@ public class OuterClass {
         staticObject.displayMessage();
 
         OuterClass outerObject = new OuterClass();
-        Outerclass.InnerClass innerObject = outerObject.new InnerClass();
+        OuterClass.InnerClass innerObject = outerObject.new InnerClass();
         innerObject.accessMembers();
     }
 }
