@@ -16,7 +16,8 @@ public class ArrayExample {
 
     /** 
      * Main function that fills in null slots in Weeble array
-     * & creates a int and String array (both null).
+     * & creates a int array with 20 integer variables defaulted at 0
+     * & creates a String array with 20 null String objects.
      * 
      * @param args
      */
