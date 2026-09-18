@@ -4,9 +4,10 @@ public class Person {
     private int age;
 
     /**
+     * Constructs a Person with provided name and age.
      * 
-     * @param name
-     * @param age
+     * @param name the person's name
+     * @param age  the person's age
      */
     public Person(String name, int age) {
         this.name = name;
